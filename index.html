@@ -113,7 +113,7 @@
             transition: background-color 0.3s;
         }
         a:hover {
-            background-color: #29323c;
+            background-color: #292E35;
         }
         .navbar {
             background-color: #101921;
@@ -145,7 +145,7 @@
     <div class="navbar">
         <a href="index.html">Ann_Portfolio</a>
         <a href="#about">About</a>
-        <a href="projects.html">Projects</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </div>
 
@@ -158,12 +158,14 @@
 
     <section id="project-description">
         <h2>Project Description</h2>
-        <p>This project, "ROTA & PAYROLL for Cooking Class," is an automated platform that streamlines processes from booking invoices to rota creation, culminating in weekly payroll generation.</p>
+        <p>This project is an automated Rota & Payroll system for a Cooking Class. It streamlines the workflow from booking invoices to generating weekly payroll.</p>
     </section>
 
     <section id="project-script">
         <h2>Project Script</h2>
-        <p>The written script integrates advanced formulas, Google Apps Script automation, and real-time updates to ensure efficiency and accuracy in managing class schedules and payments.</p>
+        <pre>
+            =ARRAYFORMULA(IF(A2:A<>"", WEEKDAY(A2:A, 2), ""))
+        </pre>
     </section>
 
     <footer>
@@ -172,3 +174,4 @@
     </footer>
 </body>
 </html>
+
