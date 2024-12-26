@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROTA & PAYROLL for Cooking Class</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fahkwang';
+            background-color: #101921;
+            color: #FCF9E2;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #FCF9E2;
+        }
+        p {
+            color: #FCF9E2;
+        }
+        .navbar {
+            background-color: #101921;
+            padding: 15px;
+            text-align: center;
+        }
+        .navbar a {
+            color: #FCF9E2;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .button-link {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 25px;
+            background-color: #4B091C;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        .button-link:hover {
+            background-color: #7A0E2C;
+        }
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            text-align: left;
+            background-color: #292E35;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background-color: #101921;
+            color: #FCF9E2;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        pre {
+            background-color: #101921;
+            padding: 10px;
+            border-radius: 5px;
+            color: #FFFFFF;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Ann_Portfolio</a>
+        <a href="projects.html">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <h1>ROTA & PAYROLL for Cooking Class</h1>
+
+    <!-- Button Link to the Project -->
+    <a class="button-link" href="https://docs.google.com/spreadsheets/d/1QC0377HV2fH-ZR0JV9pjhaOjlAqI1Ide65WSc-5MrOU/view?usp=sharing" target="_blank">View Project</a>
+
+    <!-- Details Summary Section -->
+    <section>
+        <h2>Details Summary</h2>
+        <p>
+            This project provides a fully automated solution for managing a cooking class's workflow. 
+            It starts with processing booking invoices, followed by creating and managing the staff rota, and finally generating weekly payroll reports. 
+            The system integrates Google Sheets formulas to ensure efficiency and accuracy, reducing manual effort and errors.
+        </p>
+    </section>
+
+    <!-- Project's Written Script Section -->
+    <section>
+        <h2>Project's Written Script</h2>
+        <pre>
+=ARRAYFORMULA(IF(A2:A<>"", WEEKDAY(A2:A, 2), ""))
+        </pre>
+        <p>
+            This script automates the identification of weekdays for each entry in the dataset. The formula evaluates the dates in column `A` 
+            and returns the corresponding weekday numbers. This serves as the foundation for generating schedules and payroll calculations.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ann_Portfolio</p>
+        <a href="https://github.com/yourusername" style="color: #FFFFFF; text-decoration: none;">GitHub</a>
+    </footer>
+</body>
+</html>
